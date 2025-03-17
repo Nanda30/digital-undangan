@@ -15,10 +15,10 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <Image 
           src="/img/depan.jpg" 
-          alt="Nanda & Nanda Wedding" 
+          alt="Fadho & Dera" 
           layout="fill" 
           objectFit="cover" 
-          className="brightness-75"
+          className="brightness-75" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/90"></div>
       </div>
