@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Existing Fonts */
+@font-face {
+  font-family: "Photography Signature";
+  src: url("/fonts/PhotographySignature.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.photography-font {
+  font-family: "Photography Signature", cursive;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap");
+
+.modern-antiqua {
+  font-family: "Modern Antiqua", cursive;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/fonts/LibreBaskerville-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* New Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+/* Local font */
+@font-face {
+  font-family: "Belisa";
+  src: url("/fonts/Belisa.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Samantha";
+  src: url("/fonts/Samantha.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font Classes */
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.source-sans {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.sofia {
+  font-family: "Sofia", cursive;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+}
+
+.belisa {
+  font-family: "Belisa", cursive;
+}
+
+.samantha {
+  font-family: "Samantha", cursive;
+}
