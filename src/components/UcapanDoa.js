@@ -67,7 +67,7 @@ const UcapanDoa = () => {
   const displayedUcapan = ucapanList.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <section className="relative flex justify-center items-center py-10 px-6 bg-gray-100">
+    <section className="relative flex justify-center items-center py-10 px-6 bg-[url('/img/bg8.png')] bg-cover bg-center">
       {/* Background Blur */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-lg opacity-40"

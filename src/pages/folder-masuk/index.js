@@ -75,7 +75,7 @@ export default function HeroSection() {
       </button>
 
       {/* Elemen Audio */}
-      <audio ref={audioRef} src="/music/MarryYou.mp3" loop />
+      <audio ref={audioRef} src="/music/sempurna.mp3" loop />
 
       {/* HERO SECTION */}
       <section className="relative h-screen flex flex-col items-center justify-between text-center text-white">

@@ -3,20 +3,20 @@ import Image from "next/image";
 
 export default function SaveTheDate() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center py-8 px-4 bg-gray-300">
+    <section className="relative flex flex-col items-center justify-center text-center py-8 px-4 bg-[url('/img/bg9.png')] bg-cover bg-center">
       {/* Save The Date */}
       <div className="relative z-10 max-w-lg mb-10">
-        <h1 className="text-[45px] font-bold playfair text-[#928573]">
+        <h1 className="text-[45px] font-bold playfair text-[#E7CCA5]">
           Save The Date
         </h1>
 
-        <p className="text-[12px] font-bold samantha text-[#303333] mt-4 leading-relaxed">
+        <p className="text-[12px] font-bold samantha text-[#E7CCA5] mt-4 leading-relaxed">
           وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا
           لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ
           اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
         </p>
 
-        <p className="text-[12px] opensans text-[#303333] mt-4 leading-relaxed">
+        <p className="text-[12px] opensans text-[#E7CCA5] mt-4 leading-relaxed">
           Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
           pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa
           tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih
@@ -24,7 +24,7 @@ export default function SaveTheDate() {
           tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
         </p>
 
-        <p className="text-[12px] samantha text-[#303333] mt-6">
+        <p className="text-[12px] samantha text-[#E7CCA5] mt-6">
           - Ar-Rum · Ayat 21 -
         </p>
       </div>
@@ -74,7 +74,7 @@ export default function SaveTheDate() {
 
 
       {/* mpas */}
-      <p className="text-[12px] opensans text-[#303333] leading-relaxed max-w-md py-6">
+      <p className="text-[12px] opensans text-[#E7CCA5] leading-relaxed max-w-md py-6">
         Besar harapan kami jika Bapak/Ibu/Sahabat/Sdr/i berkenan hadir pada acara ini. 
         Atas perhatiannya Terima kasih.
       </p>

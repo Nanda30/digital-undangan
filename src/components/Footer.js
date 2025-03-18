@@ -11,7 +11,7 @@ const ThankYouSection = () => {
       <div className="flex justify-center">
         <div className="rounded-lg overflow-hidden border-4 border-[#D4A055] shadow-lg">
           <Image
-            src="/img/nadi.jpg" // Sesuaikan path gambar
+            src="/img/CKO_8487.jpg" 
             alt="Fadho & Dera"
             width={250}
             height={250}
@@ -26,7 +26,7 @@ const ThankYouSection = () => {
       </h2>
 
       {/* Teks Terima Kasih */}
-      <p className="text-white text-lg mt-2 font-light">Terima kasih</p>
+      <p className="text-gray-600 text-lg font-light">Terima kasih</p>
     </section>
   );
 };
@@ -87,7 +87,7 @@ export default function WeddingThankYouPage() {
   return (
     <>
       <ThankYouSection />
-      <WeddingFooter />
+      {/* <WeddingFooter /> */}
     </>
   );
 }

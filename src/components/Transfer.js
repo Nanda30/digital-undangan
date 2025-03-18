@@ -7,12 +7,12 @@ export default function GiftSection() {
 
   const accounts = [
     {
-      bankLogo: "/img/bca-logo.png", 
+      bankLogo: "/img/bca.png", 
       accountNumber: "4270287439",
       accountName: "A/n Fadho Ariza Raihandra ",
     },
     {
-      bankLogo: "/img/bca-logo.png", 
+      bankLogo: "/img/bca.png", 
       accountNumber: "4270250152",
       accountName: "A/n Dera Nurildha",
     },
@@ -25,7 +25,7 @@ export default function GiftSection() {
   };
 
   return (
-    <section className="py-12 bg-white text-center">
+    <section className="py-12 bg-white text-center ">
       {/* Title */}
       <div className="mb-6">
         <h2 className="text-4xl font-bold italic text-[#6D4C41]">Tutup Hadiah</h2>

@@ -25,12 +25,12 @@ const thumbnails = [
 
 export default function WeddingGallery() {
   return (
-    <section className="text-center py-10 bg-white px-4">
+    <section className="text-center py-10 px-4 bg-[#E7CCA5]">
       {/* Judul & Doa */}
-      <h3 className="text-sm text-gray-500 italic opensans">
+      <h3 className="text-sm text-[#303333] italic opensans">
         Mohon doa restu dari kami yang berbahagia
       </h3>
-      <h2 className="text-lg font-bold samantha text-[#715b40] mt-2 leading-relaxed">
+      <h2 className="text-lg font-bold samantha text-[#303333] mt-2 leading-relaxed">
         Barakallahu laka wa baraka‘alaika wa jama‘a <br /> bainakumaa fii khair
       </h2>
 
