@@ -16,7 +16,7 @@ export default function HeroSection() {
 
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining(weddingDate));
   const [currentImage, setCurrentImage] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false); // State untuk musik
+  const [isPlaying, setIsPlaying] = useState(true); 
 
   const audioRef = useRef(null); // Referensi elemen audio
 
@@ -37,6 +37,16 @@ export default function HeroSection() {
       setCurrentImage((prev) => (prev + 1) % images.length);
     }, 5000);
 
+    // Auto-play musik setelah halaman dimuat
+    const playAudio = () => {
+      if (audioRef.current) {
+        audioRef.current.muted = false; // Menghilangkan mute jika ada
+        audioRef.current.play().catch((error) => console.error("Autoplay gagal:", error));
+      }
+    };
+
+    playAudio();
+
     return () => {
       clearInterval(interval);
       clearInterval(sliderInterval);
@@ -53,30 +63,28 @@ export default function HeroSection() {
   }
 
   // Fungsi untuk toggle musik
-  const toggleMusic = () => {
+  const stopMusic = () => {
     if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
+      audioRef.current.pause();
+      setIsPlaying(false);
     }
   };
 
   return (
     <>
-      {/* Tombol Play/Pause Musik */}
-      <button
-        onClick={toggleMusic}
-        className="fixed top-5 right-5 z-50 p-3 bg-gray-600 rounded-full shadow-lg hover:bg-white transition"
-      >
-        {isPlaying ? <FaPause className="text-[#E7CCA5]" /> : <FaPlay className="text-[#E7CCA5]" />}
-      </button>
+     {/* Tombol Pause Musik */}
+     {isPlaying && (
+        <button
+          onClick={stopMusic}
+          className="fixed top-5 right-5 z-50 p-3 bg-gray-600 rounded-full shadow-lg hover:bg-white transition"
+        >
+          <FaPause className="text-[#E7CCA5]" />
+        </button>
+      )}
 
-      {/* Elemen Audio */}
-      <audio ref={audioRef} src="/music/sempurna.mp3" loop />
-
+      {/* Elemen Audio dengan Auto-Play */}
+      <audio ref={audioRef} src="/music/sempurna.mp3" autoPlay loop muted />
+      
       {/* HERO SECTION */}
       <section className="relative h-screen flex flex-col items-center justify-between text-center text-white">
         {/* Background Slider */}

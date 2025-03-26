@@ -25,27 +25,30 @@ export default function GiftSection() {
   };
 
   return (
-    <section className="py-12 bg-white text-center ">
+    <section
+    className="py-12 text-center bg-cover bg-center"
+    style={{ backgroundImage: "url('/img/bg8.png')" }} // Sesuaikan path background
+  >
       {/* Title */}
       <div className="mb-6">
-        <h2 className="text-4xl font-bold italic text-[#6D4C41]">Tutup Hadiah</h2>
+        <h2 className="text-4xl font-bold italic text-[#E7CCA5]">Tutup Hadiah</h2>
       </div>
 
       {/* Description */}
-      <p className="text-[#7A5C47] leading-relaxed max-w-md mx-auto font-serif">
+      <p className="text-[#E7CCA5] leading-relaxed max-w-md mx-auto font-serif">
         Doa restu Bapak/Ibu sekalian merupakan karunia yang sangat berarti bagi kami. 
         Dan jika memberi merupakan ungkapan tanda kasih, Bapak/Ibu dapat memberi 
         kado secara cashless. Terima kasih.
       </p>
 
-      <p className="text-sm text-gray-600 italic mt-2">
+      <p className="text-sm text-white italic mt-2">
         Note: Terdapat pilihan untuk menyembunyikan daftar rekening, dan akan muncul 
         ketika klik tombol.
       </p>
 
       {/* Tombol Tampilkan/Sembunyikan Rekening */}
       <button
-        className="mt-6 px-6 py-2 bg-[#BCAAA4] text-white font-medium rounded-md shadow-md hover:bg-[#A1887F] transition"
+        className="mt-6 px-6 py-2 bg-gray-400 text-white font-medium rounded-md shadow-md hover:bg-[#A1887F] transition"
         onClick={() => setShowAccounts(!showAccounts)}
       >
         {showAccounts ? "Sembunyikan Rekening" : "Tampilkan Rekening"}

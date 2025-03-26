@@ -5,7 +5,7 @@ const ThankYouSection = () => {
   return (
     <section
       className="py-20 text-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/img/background-pattern.png')" }} // Sesuaikan path background
+      style={{ backgroundImage: "url('/img/footer2.png')" }} // Sesuaikan path background
     >
       {/* Foto Pasangan */}
       <div className="flex justify-center">
@@ -26,7 +26,7 @@ const ThankYouSection = () => {
       </h2>
 
       {/* Teks Terima Kasih */}
-      <p className="text-gray-600 text-lg font-light">Terima kasih</p>
+      <p className="text-white text-lg font-light">Terima kasih</p>
     </section>
   );
 };

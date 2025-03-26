@@ -12,15 +12,13 @@ const images = [
 
 const thumbnails = [
   "/img/CKO_8485.jpg",
-  "/img/CKO_8599.jpg",
+  "/img/CKO_8550.jpg",
   "/img/CKO_8696.jpg",
   "/img/CKO_8714.jpg",
   "/img/CKO_8636.jpg",
   "/img/CKO_8630.jpg",
   "/img/CKO_8707.jpg",
   "/img/CKO_8724.jpg",
-  "/img/CKO_8550.jpg",
-  "/img/CKO_8533.jpg",
 ];
 
 export default function WeddingGallery() {
@@ -30,7 +28,7 @@ export default function WeddingGallery() {
       <h3 className="text-sm text-[#303333] italic opensans">
         Mohon doa restu dari kami yang berbahagia
       </h3>
-      <h2 className="text-lg font-bold samantha text-[#303333] mt-2 leading-relaxed">
+      <h2 className="text-lg font-bold samantha text-[#6D4C41] mt-2 leading-relaxed">
         Barakallahu laka wa baraka‘alaika wa jama‘a <br /> bainakumaa fii khair
       </h2>
 
