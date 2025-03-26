@@ -73,7 +73,7 @@ export default function HeroSection() {
   return (
     <>
      {/* Tombol Pause Musik */}
-     {isPlaying && (
+           {isPlaying && (
         <button
           onClick={stopMusic}
           className="fixed top-5 right-5 z-50 p-3 bg-gray-600 rounded-full shadow-lg hover:bg-white transition"
@@ -82,7 +82,7 @@ export default function HeroSection() {
         </button>
       )}
 
-      {/* Elemen Audio dengan Auto-Play */}
+      {/* Elemen Audio */}
       <audio ref={audioRef} src="/music/sempurna.mp3" autoPlay loop muted />
       
       {/* HERO SECTION */}
@@ -105,6 +105,32 @@ export default function HeroSection() {
           <h1 className="text-4xl md:text-5xl dancing-script font-bold mt-2 text-white drop-shadow-lg">
             Fadho & Dera
           </h1>
+
+          {/* Countdown Text */}
+          <div className="mt-96">
+            <h3 className="text-xl font-semibold text-[#E7CCA5]">Hitung Mundur</h3>
+            <h1 className="text-3xl md:text-4xl font-bold text-white">Menuju Acara</h1>
+          </div>
+
+          {/* Countdown Timer */}
+          <div className="flex justify-center space-x-4 text-lg font-semibold mt-6">
+            <div className="p-3 bg-[#E7CCA5] text-black rounded-md">
+              <span className="block text-3xl">{timeLeft.days}</span>
+              <span className="text-sm">Hari</span>
+            </div>
+            <div className="p-3 bg-[#E7CCA5] text-black rounded-md">
+              <span className="block text-3xl">{timeLeft.hours}</span>
+              <span className="text-sm">Jam</span>
+            </div>
+            <div className="p-3 bg-[#E7CCA5] text-black rounded-md">
+              <span className="block text-3xl">{timeLeft.minutes}</span>
+              <span className="text-sm">Menit</span>
+            </div>
+            <div className="p-3 bg-[#E7CCA5] text-black rounded-md">
+              <span className="block text-3xl">{timeLeft.seconds}</span>
+              <span className="text-sm">Detik</span>
+            </div>
+          </div>
         </div>
       </section>
 
