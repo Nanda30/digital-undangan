@@ -31,7 +31,7 @@ export default function GiftSection() {
   >
       {/* Title */}
       <div className="mb-6">
-        <h2 className="text-4xl font-bold italic text-[#E7CCA5]">Tutup Hadiah</h2>
+        <h2 className="text-4xl font-bold italic text-[#E7CCA5]">Wedding Gift</h2>
       </div>
 
       {/* Description */}
@@ -51,7 +51,7 @@ export default function GiftSection() {
         className="mt-6 px-6 py-2 bg-gray-400 text-white font-medium rounded-md shadow-md hover:bg-[#A1887F] transition"
         onClick={() => setShowAccounts(!showAccounts)}
       >
-        {showAccounts ? "Sembunyikan Rekening" : "Wedding Gift"}
+        {showAccounts ? "Sembunyikan Rekening" : "Tampilkan Rekening"}
       </button>
 
       {/* List Rekening */}
