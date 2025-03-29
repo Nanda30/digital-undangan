@@ -9,6 +9,9 @@ export default function HeroSection() {
   };
   const searchParams = useSearchParams();
   const nama = searchParams.get("nama");
+  const partner = searchParams.get("partner");
+
+
   return (
     <section className="relative h-screen flex flex-col items-center justify-between text-center text-white px-6 py-12">
       {/* Background Image */}
@@ -37,8 +40,9 @@ export default function HeroSection() {
       <div className="relative z-10 mb-10">
         <p className="text-sm text-gray-300">Kepada Yth,</p>
         <p className="text-lg md:text-xl font-semibold text-yellow-400">
-        {nama ? `${nama} & Partner` : "Kamu & Partner"}
+          {nama || "Kamu"} {partner ? `& ${partner}` : "& Partner"}
         </p>
+
         <p className="mt-4 max-w-lg mx-auto text-gray-200 text-sm leading-relaxed poppins">
           Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.
         </p>
