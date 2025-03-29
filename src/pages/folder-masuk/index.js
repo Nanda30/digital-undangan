@@ -113,10 +113,10 @@ export default function HeroSection() {
 
           {/* Countdown Text */}
           <div className="mt-96">
-            <h3 className="text-xl font-semibold text-[#E7CCA5]">
+            <h3 className="text-xl font-semibold tracking-widest text-[#E7CCA5]">
               Hitung Mundur
             </h3>
-            <h1 className="text-3xl md:text-4xl font-bold text-white">
+            <h1 className="text-3xl md:text-4xl font-bold dancing-script text-white">
               Menuju Acara
             </h1>
           </div>
