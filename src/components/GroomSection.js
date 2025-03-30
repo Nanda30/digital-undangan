@@ -10,6 +10,45 @@ export default function GroomSection() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
         
         {/* Bagian Teks (Kiri) */}
+        <div className="flex justify-center">
+          <div className="relative w-[250px] h-[320px] md:w-[300px] md:h-[400px] overflow-hidden rounded-full shadow-lg border-4 border-[#E7CCA5]">
+            <Image
+              src="/img/CKO_8755.jpg"
+              alt="The Bride"
+              layout="fill"
+              objectFit="cover"
+              className="scale-100 object-[55%] scale-x-[-1]" 
+            />
+          </div>
+        </div>
+
+
+        {/* Bagian Teks (Kanan) */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-3">
+          <h1 className="text-[27px] text-[#E7CCA5] font-bold belisa leading-tight">
+            Dera Nurildha
+          </h1>
+
+          <div className="border-t border-[#E7CCA5] w-16 my-2"></div> {/* Garis Pembatas */}
+
+          <p className="text-[12px] text-[#E7CCA5] font-playfair leading-relaxed">
+            <span className="block source-sans">Putri dari Pasangan</span>
+            <span className="block source-sans">Ayah Dede Ahadi &</span>
+            <span className="block source-sans">Ibu Ira Rahmawati</span>
+            <span className="block source-sans">Beralamat di Bogor</span>
+          </p>
+
+          <div className="border-t border-[#E7CCA5] w-16 my-2"></div> {/* Garis Pembatas */}
+
+          {/* Button Instagram */}
+          <Link href="https://www.instagram.com/deranurildha/" target="_blank">
+            <button className="mt-2 flex items-center gap-2 px-2 py-1 text-[10px] text-black bg-[#E7CCA5] rounded-full shadow-md hover:bg-[#d6b98f] transition">
+              <FaInstagram className="text-lg" />
+              Deranurildha
+            </button>
+          </Link>
+        </div>
+        
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-3">
           <h1 className="text-[27px] text-[#E7CCA5] font-bold belisa leading-tight">
             Fadho Ariza Raihandra
@@ -50,49 +89,7 @@ export default function GroomSection() {
       </div>
 
       {/* Grid 2 Kolom (Untuk Pasangan) */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center mt-10">
-        
-       {/* Bagian Gambar (Kiri) */}
-        <div className="flex justify-center">
-          <div className="relative w-[250px] h-[320px] md:w-[300px] md:h-[400px] overflow-hidden rounded-full shadow-lg border-4 border-[#E7CCA5]">
-            <Image
-              src="/img/CKO_8755.jpg"
-              alt="The Bride"
-              layout="fill"
-              objectFit="cover"
-              className="scale-100 object-[55%] scale-x-[-1]" 
-            />
-          </div>
-        </div>
-
-
-        {/* Bagian Teks (Kanan) */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-3">
-          <h1 className="text-[27px] text-[#E7CCA5] font-bold belisa leading-tight">
-            Dera Nurildha
-          </h1>
-
-          <div className="border-t border-[#E7CCA5] w-16 my-2"></div> {/* Garis Pembatas */}
-
-          <p className="text-[12px] text-[#E7CCA5] font-playfair leading-relaxed">
-            <span className="block source-sans">Putri dari Pasangan</span>
-            <span className="block source-sans">Ayah Dede Ahadi &</span>
-            <span className="block source-sans">Ibu Ira Rahmawati</span>
-            <span className="block source-sans">Beralamat di Bogor</span>
-          </p>
-
-          <div className="border-t border-[#E7CCA5] w-16 my-2"></div> {/* Garis Pembatas */}
-
-          {/* Button Instagram */}
-          <Link href="https://www.instagram.com/deranurildha/" target="_blank">
-            <button className="mt-2 flex items-center gap-2 px-2 py-1 text-[10px] text-black bg-[#E7CCA5] rounded-full shadow-md hover:bg-[#d6b98f] transition">
-              <FaInstagram className="text-lg" />
-              Deranurildha
-            </button>
-          </Link>
-        </div>
-
-      </div>
+      
     </section>
   );
 }

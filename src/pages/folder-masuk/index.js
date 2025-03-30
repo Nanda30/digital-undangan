@@ -108,7 +108,7 @@ export default function HeroSection() {
             The Wedding Of
           </p>
           <h1 className="text-4xl md:text-5xl dancing-script font-bold mt-2 text-white drop-shadow-lg">
-            Fadho & Dera
+            Dera & Fadho
           </h1>
 
           {/* Countdown Text */}
