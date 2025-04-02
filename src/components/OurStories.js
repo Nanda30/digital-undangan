@@ -23,8 +23,10 @@ const thumbnails = [
 
 export default function WeddingGallery() {
   return (
-    <section className="text-center py-10 px-4 bg-gray-400"
-    style={{ backgroundImage: "url('/img/bg5.png')" }}>
+    <section
+      className="text-center py-10 px-4 bg-gray-400"
+      style={{ backgroundImage: "url('/img/bg5.png')" }}
+    >
       {/* Judul & Doa */}
       <h3 className="text-sm text-white italic opensans">
         Mohon doa restu dari kami yang berbahagia
@@ -36,14 +38,14 @@ export default function WeddingGallery() {
       {/* Swiper Slider - Auto Slide */}
       <div className="max-w-3xl mx-auto mt-6">
         <Swiper
-          modules={[Autoplay]} // Menggunakan Autoplay
+          modules={[Autoplay]}
           autoplay={{
-            delay: 3000, // Setiap slide akan berganti dalam 3 detik
-            disableOnInteraction: false, // Tetap autoplay meskipun user berinteraksi
+            delay: 3000,
+            disableOnInteraction: false,
           }}
           loop
           className="rounded-lg shadow-lg"
-        >   
+        >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
               <Image
@@ -51,7 +53,7 @@ export default function WeddingGallery() {
                 alt={`Gallery image ${index + 1}`}
                 width={500}
                 height={300}
-                className="w-full h-auto object-cover rounded-lg"
+                className="w-full h-auto object-cover rounded-lg border-2 border-white" // Border putih
               />
             </SwiperSlide>
           ))}
@@ -70,7 +72,7 @@ export default function WeddingGallery() {
               alt={`Thumbnail ${index + 1}`}
               width={200}
               height={200}
-              className="w-full h-auto object-cover cursor-pointer transition-transform transform group-hover:scale-105"
+              className="w-full h-auto object-cover cursor-pointer transition-transform transform group-hover:scale-105 border-2 border-white" // Border putih
             />
           </div>
         ))}
