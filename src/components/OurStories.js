@@ -24,7 +24,7 @@ const thumbnails = [
 export default function WeddingGallery() {
   return (
     <section className="text-center py-10 px-4 bg-gray-400"
-    style={{ backgroundImage: "url('/img/bg9.png')" }}>
+    style={{ backgroundImage: "url('/img/bg5.png')" }}>
       {/* Judul & Doa */}
       <h3 className="text-sm text-white italic opensans">
         Mohon doa restu dari kami yang berbahagia

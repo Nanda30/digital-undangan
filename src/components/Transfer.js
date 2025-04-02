@@ -27,7 +27,7 @@ export default function GiftSection() {
   return (
     <section
     className="py-12 text-center bg-cover bg-center"
-    style={{ backgroundImage: "url('/img/bg8.png')" }} // Sesuaikan path background
+    style={{ backgroundImage: "url('/img/bg5.png')" }} // Sesuaikan path background
   >
       {/* Title */}
       <div className="mb-6">
@@ -65,10 +65,11 @@ export default function GiftSection() {
               {/* Bank Logo */}
               <div className="flex items-center space-x-4">
                 <Image src={account.bankLogo} alt="Bank Logo" width={50} height={30} />
-                <div>
+                <div className="flex flex-col text-left">
                   <p className="text-lg font-semibold text-gray-800">{account.accountNumber}</p>
                   <p className="text-sm text-gray-600">{account.accountName}</p>
                 </div>
+
               </div>
 
               {/* Tombol Copy */}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SaveTheDate() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center py-8 px-4 bg-[url('/img/bg9.png')] bg-cover bg-center">
+    <section className="relative flex flex-col items-center justify-center text-center py-8 px-4 bg-[url('/img/bg5.png')] bg-cover bg-center">
       {/* Save The Date */}
       <div className="relative z-10 max-w-lg mb-10">
         <h1 className="text-[45px] font-bold playfair text-[#E7CCA5]">

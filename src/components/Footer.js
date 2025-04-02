@@ -9,7 +9,7 @@ const ThankYouSection = () => {
     >
       {/* Foto Pasangan */}
       <div className="flex justify-center">
-        <div className="rounded-lg overflow-hidden border-4 border-[#D4A055] shadow-lg">
+        <div className="rounded-lg overflow-hidden border-4 shadow-lg">
           <Image
             src="/img/CKO_8487.jpg" 
             alt="Fadho & Dera"
@@ -21,12 +21,12 @@ const ThankYouSection = () => {
       </div>
 
       {/* Nama Pasangan */}
-      <h2 className="text-4xl md:text-5xl font-bold text-[#D4A055] mt-6 custom-font">
-        Fadho & Dera
+      <h2 className="text-4xl md:text-5xl dancing-script font-bold text-[#D4A055] mt-6 ">
+        Dera & Fadho
       </h2>
 
       {/* Teks Terima Kasih */}
-      <p className="text-white text-lg font-light">Terima kasih</p>
+      <p className="text-white text-lg tracking-widest">Terima kasih</p>
     </section>
   );
 };
