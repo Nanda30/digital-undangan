@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useSearchParams } from "next/navigation";
+
 export default function HeroSection() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  
+  const nama = searchParams.get("nama")?.trim(); // Menghapus spasi berlebih
+  const partner = searchParams.get("partner")?.trim();
 
   const handleOpenInvitation = () => {
     router.push('/folder-masuk');
   };
-  const searchParams = useSearchParams();
-  const nama = searchParams.get("nama");
-  const partner = searchParams.get("partner");
-
 
   return (
     <section className="relative h-screen flex flex-col items-center justify-between text-center text-white px-6 py-12">
@@ -39,8 +40,10 @@ export default function HeroSection() {
       {/* Footer Content */}
       <div className="relative z-10 mb-10">
         <p className="text-sm text-gray-300">Kepada Yth,</p>
-        <p className="text-lg md:text-xl font-semibold text-yellow-400">
-          {nama || "Kamu"} {partner ? `& ${partner}` : "& Partner"}
+
+        {/* Kondisi Nama & Partner */}
+        <p className="text-lg md:text-xl font-semibold text-yellow-400 whitespace-pre-line">
+          {nama ? nama : "Kamu"} {partner ? `& ${partner}` : ""}
         </p>
 
         <p className="mt-4 max-w-lg mx-auto text-gray-200 text-sm leading-relaxed poppins">
