@@ -6,8 +6,9 @@ export default function HeroSection() {
   const router = useRouter();
   const searchParams = useSearchParams();
   
-  const nama = searchParams.get("nama")?.trim(); // Menghapus spasi berlebih
-  const partner = searchParams.get("partner")?.trim();
+  // Ambil dan decode parameter nama & partner dari URL
+  const nama = searchParams.get("nama") ? decodeURIComponent(searchParams.get("nama")).trim() : "";
+  const partner = searchParams.get("partner") ? decodeURIComponent(searchParams.get("partner")).trim() : "";
 
   const handleOpenInvitation = () => {
     router.push('/folder-masuk');
@@ -41,9 +42,9 @@ export default function HeroSection() {
       <div className="relative z-10 mb-10">
         <p className="text-sm text-gray-300">Kepada Yth,</p>
 
-        {/* Kondisi Nama & Partner */}
+        {/* Nama dan Partner */}
         <p className="text-lg md:text-xl font-semibold text-yellow-400 whitespace-pre-line">
-          {nama ? nama : "Kamu"} {partner ? `& ${partner}` : ""}
+          {nama || "Kamu"} {partner ? `& ${partner}` : ""}
         </p>
 
         <p className="mt-4 max-w-lg mx-auto text-gray-200 text-sm leading-relaxed poppins">
