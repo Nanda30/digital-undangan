@@ -119,38 +119,44 @@ const UcapanDoa = () => {
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex justify-center mt-6 space-x-2">
-            <button
-              className={`px-3 py-1 rounded-md font-semibold ${
-                currentPage === 1 ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-[#715b40] text-white hover:bg-[#5a4630]"
-              }`}
-              onClick={() => setCurrentPage(currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              « Prev
-            </button>
+  <div className="flex flex-wrap justify-center mt-6 gap-2">
+    <button
+      className={`px-4 py-2 rounded-md text-sm font-medium transition ${
+        currentPage === 1
+          ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+          : "bg-[#715b40] text-white hover:bg-[#5a4630]"
+      }`}
+      onClick={() => setCurrentPage(currentPage - 1)}
+      disabled={currentPage === 1}
+    >
+      « Prev
+    </button>
 
-            {[...Array(totalPages)].map((_, index) => (
-              <button
-                key={index}
-                className={`px-3 py-1 rounded-md font-semibold ${
-                  currentPage === index + 1 ? "bg-[#715b40] text-white" : "bg-gray-300 text-gray-700 hover:bg-[#5a4630] hover:text-white"
-                }`}
-                onClick={() => setCurrentPage(index + 1)}
-              >
-                {index + 1}
-              </button>
-            ))}
+    {[...Array(totalPages)].map((_, index) => (
+      <button
+        key={index}
+        className={`px-4 py-2 rounded-md text-sm font-medium transition ${
+          currentPage === index + 1
+            ? "bg-[#E7CCA5] text-black font-bold shadow"
+            : "bg-gray-100 text-gray-800 hover:bg-[#d9b886] hover:text-black"
+        }`}
+        onClick={() => setCurrentPage(index + 1)}
+      >
+        {index + 1}
+      </button>
+    ))}
 
-            <button
-              className={`px-3 py-1 rounded-md font-semibold ${
-                currentPage === totalPages ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-[#715b40] text-white hover:bg-[#5a4630]"
-              }`}
-              onClick={() => setCurrentPage(currentPage + 1)}
-              disabled={currentPage === totalPages}
-            >
-              Next »
-            </button>
+    <button
+      className={`px-4 py-2 rounded-md text-sm font-medium transition ${
+        currentPage === totalPages
+          ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+          : "bg-[#715b40] text-white hover:bg-[#5a4630]"
+      }`}
+      onClick={() => setCurrentPage(currentPage + 1)}
+      disabled={currentPage === totalPages}
+    >
+      Next »
+    </button>
           </div>
         )}
       </div>
